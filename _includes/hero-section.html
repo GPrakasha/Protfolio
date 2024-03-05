@@ -1,0 +1,48 @@
+<div id="particles-js" class="hero-section">
+    <div class="intro-section-container">
+        <div class="d-flex neomorphism-card-flat intro-section flex-column m-auto p-4 justify-content-center align-items-center">
+            <span class="fs-2">
+                Hi, I'm <span class="name">G Prakasha</span>
+            </span>
+            <span class="fs-2 mt-3">
+                I am into web development
+            </span>
+
+            <div class="social-icons w-100 justify-content-evenly mt-4">
+                {% if site.email != null %}
+                    <a class="social-link neomorphism-card-flat concave-on-hover" aria-label="My E-Mail" href="mailto:{{site.email}}">
+                        <div class="social">
+                        <svg class="social-svg" viewBox="0 0 48 48">
+                            <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/solid.svg#envelope" | prepend: site.baseurl }}"></use>
+                        </svg>
+                        </div>
+                    </a>
+                {% endif %}
+
+                {% if site.bitbucket_username != null %}
+                    <a class="social-link neomorphism-card-flat concave-on-hover" aria-label="My GitHub" target="_blank" rel="noreferrer"
+                    href="https://https://bitbucket.org//{{site.bitbucket_username}}"
+                    >
+                        <div class="social">
+                            <svg class="social-svg" viewBox="0 0 48 48">
+                            <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#bitbucket" | prepend: site.baseurl }}"></use>
+                            </svg>
+                        </div>
+                    </a>
+                {% endif %}
+
+                {% if site.linkedin_username != null %}
+                    <a class="social-link neomorphism-card-flat concave-on-hover linkedin" aria-label="My LinkedIn" target="_blank"
+                    rel="noreferrer" href="https://www.linkedin.com/in/{{site.linkedin_username}}"
+                    >
+                        <div class="social">
+                            <svg class="social-svg" viewBox="0 0 48 48">
+                            <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#linkedin-in" | prepend: site.baseurl }}"></use>
+                            </svg>
+                        </div>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
