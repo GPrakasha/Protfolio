@@ -1,0 +1,39 @@
+<h3 class="mt-5 mb-5 mx-auto text-center">
+    Education & Career Highlights
+</h3>
+
+<div class="d-flex flex-column journey_container">
+    <div class="timeline-wrapper">
+        <div class="timeline"></div>
+
+            {% for experience in site.journey %}
+                {% capture number %}{{ forloop.length }}{% endcapture %}
+                {% assign expIndex = {{forloop.index}} %}
+                <div class="container d-flex flex-column neomorphism-card-flat {{experience.position}} {% if expIndex == 1 %}current{% endif %}">
+                    <div class="heading d-flex align-items-center m-auto">
+                        {{experience.org_name}}
+
+                        <div class="ms-2">
+                            <div class="time-range">
+                                (<span>{{experience.start_date | date: "%b %d, %Y"}}</span>
+                                {% if experience.end_date %}
+                                    -
+                                    <span>{{experience.end_date | date: "%b %d, %Y"}}</span>
+                                {% endif %})
+                            </div>
+                        </div>
+                    </div>
+                    <span class="heading">{{experience.role}}</span>
+                    <ul class="description">
+                        {% for done in experience.learnings_achievements %}
+                            <li class="learnings-achievements">
+                                {{done}}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+
+        </ul>
+    </div>
+</div>
