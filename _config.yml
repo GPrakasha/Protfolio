@@ -28,6 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 bitbucket_username:  GPrakasha
 linkedin_username: prakasha-g
+author: G Prakasha
 
 # Build settings
 theme: minima
@@ -38,6 +39,92 @@ plugins:
 sass:
   sass_dir: _sass
   style: compressed
+journey:
+  - 
+    org_name: Poshvine By Razorpay
+    role: Senior Software Engineer
+    start_date: "15-11-2023"
+    isCurrent: true
+    position: right
+    learnings_achievements:
+      - Making progress in building journey modules to be integrated to diff clients based on config.
+      - Learning to write test-cases.
+      - Onboarding new Joinees to Angular and helping align with razorpay’s process.
+      - Communicating realistic feature-level delivery estimates to facilitate smooth progress towards production delivery for the product team.
+      - Up-skilling team members.
+  - 
+    org_name: Poshvine By Razorpay
+    role: Senior Software Development Engineer
+    start_date: "15-08-2022"
+    end_date: "15-04-2023"
+    position: left
+    learnings_achievements:
+      - Learning new technologies.
+      - Making progress in building reUsable cross-platform web components.
+      - Learning & contributing with bit & lit HTML for reducing dev time and go-live time.
+  - 
+    org_name: Poshvine
+    role: Software Engineer
+    start_date: "15-11-2021"
+    end_date: "15-08-2022"
+    position: right
+    learnings_achievements:
+      - Learning new technology.
+      - Making progress in building reUsable web components.
+      - Understanding business req to choose the right techs for optimization.
+      - Learning & contributing with stencilJs for higher output.
+  - 
+    org_name: Akrity Computing
+    role: Software Engineer
+    start_date: "14-07-2021"
+    end_date: "14-11-2022"
+    position: left
+    learnings_achievements:
+      - Up-skilling team members.
+      - Estimate construction for feature.
+      - Learning to prioritize the requirements.
+      - Refactoring unstable code to make it more stable and modular.
+  - 
+    org_name: Akrity Computing
+    role: Associate Software Engineer
+    start_date: "2019-07-14"
+    end_date: "2021-07-14"
+    position: right
+    learnings_achievements:
+      - Worked closely with clients to deliver the high stable products as per the requirements.
+      - Follow best practices to code (SOLID principles) & criticizing code.
+      - Used Git to version control.
+      - Used Jira, Trello & Notion which drove to increase productivity. 
+      - Built UI screens as per the requirement with good UX.
+      - Was responsible for building production-ready features and had successfully delivered multiple times. 
+      - Made a good amount of impact by sharing thoughts & practices that can lead to a more stable product.
+  - 
+    org_name: Akrity Computing
+    role: Intern
+    start_date: "2019-06-14"
+    end_date: "2019-07-14"
+    position: left
+    learnings_achievements:
+      - Learned new skills and started applying them to daily tasks to increase productivity. 
+      - Proved successful working within tight deadlines and a fast-paced atmosphere.
+      - Successfully collaborated with the team and synced with their culture.
+      - Quickly learned the required amount of rails & react to build my internship project. 
+      - Was able to solve challenges given when building an internship project.
+  - 
+    org_name: Zwayam
+    role: Intern
+    start_date: "2019-07-10"
+    end_date: "2018-08-15"
+    position: right
+    learnings_achievements:
+      - Learned new skills and started applying them to daily tasks to increase productivity. 
+      - Proved successful working within tight deadlines and a fast-paced atmosphere.
+      - Successfully collaborated with the team and synced with their culture.
+      - Quickly learned the required amount of rails & react to build my internship project. 
+      - Was able to solve challenges given when building an internship project.
+
+
+  
 
 # Exclude from processing.
 # The following items will not be processed, by default.

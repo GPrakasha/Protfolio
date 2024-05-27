@@ -1,10 +1,10 @@
 
-
 :root {
     --bgColor: #dbdbdb;
     --shadow1: #bababa;
     --shadow2: #fcfcfc;
     --primary-color: #004E89;
+    --primary-color-light: #004e8987;
     --concave-gradient-start: #c5c5c5;
     --concave-gradient-end: #eaeaea;
 }
@@ -28,6 +28,7 @@
 
 body {
     margin: 0;
+    background-color: var(--bgColor);
 }
 
 .hero-section {
@@ -74,4 +75,107 @@ body {
     width: 4rem;
 }
 
-@import "minima";
+.about-me-container {
+    width: 75vw;
+}
+
+.journey_container {
+
+    .timeline-wrapper {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+
+        ul, li {
+            height: 100%;
+        }
+
+        .timeline {
+            list-style-type: none;
+            padding: 0;
+            position: relative;
+            display: contents;
+            height: 100%;
+
+            &::before {
+                background: var(--primary-color-light);
+                content: "";
+                height: 100%;
+                left: 50%;
+                margin-left: -0.0675rem;
+                position: absolute;
+                width: 0.125rem;
+                z-index: -1;
+            }
+        }
+
+        .container {
+            width: 40%;
+            position: relative;
+            padding: 10px;
+            // background: #ffffff;
+            margin: 0;
+
+            .heading {
+                font-size: 16px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .description {
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            .time-range {
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            &.left::before, &.right::before {
+                position: absolute;
+                content: '';
+                width: 6px;
+                height: 6px;
+                background-color: var(--primary-color);
+                border-radius: 50px;
+                top: 30px;
+                
+                &.current {
+                    animation: bloom 1s linear infinite;
+                }
+            }
+
+            &.current.left::before, &.current.right::before {
+                animation: bloom 1s linear infinite;
+            }
+
+            @keyframes bloom {
+                from {
+                    box-shadow: 0px 0px 5px 4px #c5c5c5;
+                }
+                to {
+                    box-shadow: 0px 0px 5px 4px var(--primary-color-light);
+                }
+            }
+        }
+
+        .left {
+            right: -8%;
+            padding: 20px 30px 20px 10px;
+
+            &::before {
+                right: -2.2dvw;
+            }
+        }
+        
+        .right {
+            right: -52%;
+            padding: 20px 10px 20px 30px;
+
+            &::before {
+                left: -2.2dvw;
+            }
+        }
+    }
+}
